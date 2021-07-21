@@ -402,12 +402,44 @@ header .section-inner .top-bar nav ul li {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+header .section-inner .top-bar .select-arrow {
+  position: relative;
+}
+header .section-inner .top-bar .select-arrow.selected::after {
+  transform: translateY(-50%);
+}
+header .section-inner .top-bar .select-arrow::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url("../Images/etc/small-arrow-up.svg") no-repeat;
+  background-size: cover;
+  filter: invert(1);
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: black;
+  left: 80%;
+  top: 50%;
+  transform: translateY(-50%) rotateZ(180deg);
+  transition: all 0.2s ease;
+}
 header .section-inner .top-bar__lang {
+  position: relative;
   border-radius: 2.5rem;
   width: 7rem;
   height: 3.5rem;
   background: white;
   outline: none;
+  appearance: none;
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-align-last: center;
+}
+header .section-inner .top-bar__lang::-ms-expand {
+  display: none;
 }
 header .section-inner main {
   width: 90%;
@@ -453,5 +485,5 @@ header .section-inner main .info button {
 }
 header .section-inner main .img {
   margin-left: 6%;
-  width: 40%;
+  width: 45%;
 }

@@ -67,12 +67,45 @@ header{
                     }
                 }
             }
+            .select-arrow{
+                position: relative;
+                &.selected::after{
+                    transform: translateY(-50%);
+                }
+                &::after{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background: url("../Images/etc/small-arrow-up.svg") no-repeat;
+                    background-size: cover;
+                    filter: invert(1);
+                    position: absolute;
+                    @include fontLatoBold;
+                    color: black;
+                    left: 80%;
+                    top: 50%;
+                    transform: translateY(-50%) rotateZ(180deg);
+                    transition: all .2s ease;
+                }
+            }
             &__lang{
+                position: relative;
                 border-radius: 2.5rem;
                 width: 7rem;
                 height: 3.5rem;
                 background: white;
                 outline: none;
+                appearance: none;
+                font-size: 1.8rem;
+                @include fontLatoBold;
+                text-align: center;
+                text-align-last: center;
+
+
+
+                &::-ms-expand {
+                  display: none;
+                }
             }
         }
         main{
@@ -117,7 +150,7 @@ header{
             }
             .img{
                 margin-left: 6%;
-                width: 40%;
+                width: 45%;
             }
         }
     }

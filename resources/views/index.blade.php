@@ -22,10 +22,12 @@
                         <li>BLOG</li>
                     </ul>
                 </nav>
-                <select class="top-bar__lang" name="language">
-                    <option value="RU" selected>RU</option>
-                    <option value="EN">ENG</option>
-                </select>
+                <label for="language" class='select-arrow'>
+                    <select id='language' class="top-bar__lang" name="language">
+                        <option value="RU" selected>RU</option>
+                        <option value="EN">ENG</option>
+                    </select>
+                </label>
             </div>
             <main>
                 <div class="info">
@@ -43,6 +45,10 @@
             </main>
         </div>
     </header>
+    <section class="section-partners">
+
+    </section>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/select_tag.js"></script>
 </body>
 </html>
