@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="151px" height="247px" viewBox="0 0 151 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>A615D27F-D16B-45A4-9D79-81CDDEBBE5BE</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="23.4533364%" y1="100%" x2="100%" y2="25.6451991%" id="linearGradient-1">
+            <stop stop-color="#7137BC" offset="0%"></stop>
+            <stop stop-color="#514ED7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2560" transform="translate(-474.000000, -7562.000000)" fill="url(#linearGradient-1)">
+            <g id="decor-elements" transform="translate(279.000000, 815.000000)">
+                <path d="M195,6930.23478 L204.899669,6994 C299.912638,6974.84637 361.552987,6881.6168 342.564706,6785.76444 C339.904915,6772.39781 335.742283,6759.39211 330.136446,6747 L273.243168,6776.11544 C279.171042,6790.0716 282.212506,6805.08651 282.188652,6820.26985 C282.140942,6872.95436 245.94155,6918.60063 195,6930.23478" id="decor-18" transform="translate(270.500000, 6870.500000) scale(1, -1) translate(-270.500000, -6870.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

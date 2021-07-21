@@ -1,0 +1,125 @@
+@import "Imports/normalize.scss";
+@import "Imports/variables.scss";
+@import "Imports/fonts.scss";
+// ===Common===
+html{
+    font-size: 10px;
+}
+body{
+    background: white;
+}
+.section-inner{
+    width: 92%;
+    margin: 0 auto;
+}
+.section-outer{
+    padding: {
+        right: 2rem;
+        left: 2rem;
+    }
+}
+// ===/Common===
+
+// ===Header===
+header{
+    color: $color-header-text;
+    position: relative;
+    background: url("../../Images/main2.svg") no-repeat 50% 50%;
+    background-size: 100% 100%;
+    .section-inner{
+        position: relative;
+        min-height: 140vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .top-bar{
+            margin-top: 5rem;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            &__logo{
+                height: 3.2rem;
+                width: 13rem;
+            }
+            nav{
+                position: relative;
+                min-width: 30%;
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    @include fontLatoRegular;
+                    list-style: none;
+                    justify-content: space-around;
+                    display: flex;
+                    width: 100%;
+                    font-size: $fontSize-header-nav;
+                    letter-spacing: 0.01rem;
+                    text-transform: uppercase;
+
+                    li{
+                        margin: {
+                            left: 1rem;
+                            right: 1rem;
+                        }
+                    }
+                }
+            }
+            &__lang{
+                border-radius: 2.5rem;
+                width: 7rem;
+                height: 3.5rem;
+                background: white;
+                outline: none;
+            }
+        }
+        main{
+            width: 90%;
+            position: relative;
+            margin-top: 11rem;
+            display: flex;
+            .info{
+                margin-top: 6rem;
+                position: relative;
+                width: 50%;
+
+                &__slogan{
+                    width: 100%;
+                    @include fontLatoBold;
+                    font-size: $fontSize-header-slogan;
+                }
+                &__dscrp{
+                    margin-top: 2rem;
+                    width: 80%;
+                    @include fontLatoThin;
+                    line-height: 3.2rem;
+                    letter-spacing: 0.075rem;
+                    font-size: $fontSize-header-dscrp;
+
+                }
+                button{
+                    @include fontLatoBold;
+                    margin-top: 4rem;
+                    background: linear-gradient(270deg, #FF5126 0%, #FB407E 100%);
+                    font-size: $fontSize-header-btn;
+                    font-weight: 600;
+                    border: none;
+                    outline: none;
+                    letter-spacing: 0.057rem;
+                    line-height: 1.6rem;
+                    border-radius: 2.8rem;
+                    box-shadow: 0 .8rem 3rem 0 rgb(250, 57, 53, 25%);
+                    color: white;
+                    padding: 2rem 5.3rem;
+                }
+            }
+            .img{
+                margin-left: 6%;
+                width: 40%;
+            }
+        }
+    }
+}
+// ===/Header===

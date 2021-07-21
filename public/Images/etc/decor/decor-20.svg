@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>278FA385-6A44-4C58-AD89-F3FFAB54C023</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FF5126" offset="0%"></stop>
+            <stop stop-color="#FB407E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2560" transform="translate(-541.000000, -8218.000000)" fill="url(#linearGradient-1)">
+            <g id="decor-elements" transform="translate(279.000000, 815.000000)">
+                <path d="M262,7424 C262,7412.39966 271.399658,7403 283,7403 C294.600342,7403 304,7412.39966 304,7424 C304,7435.59315 294.600342,7445 283,7445 C271.399658,7445 262,7435.59315 262,7424" id="decor-20"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="258px" viewBox="0 0 284 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>00F4705E-5F3B-47C6-AC0D-4FC4F0E50A44</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FDFF00" offset="0%"></stop>
+            <stop stop-color="#FFC600" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2560" transform="translate(-292.000000, -3631.000000)" fill="url(#linearGradient-1)">
+            <g id="decor-elements" transform="translate(279.000000, 815.000000)">
+                <path d="M80.5426958,2819.6423 L13,2816 L13,2817.22751 C13.1002117,2958.91492 127.421736,3073.77811 268.539873,3073.99946 C278.039944,3074.01958 287.560056,3073.47626 297,3072.38961 L286.177135,3005.17814 L268.539873,3005.17814 C165.842908,3004.95678 82.2663373,2922.12972 80.7431193,2819.0386 L80.5426958,2819.6423 Z" id="decor-14"></path>
+            </g>
+        </g>
+    </g>
+</svg>

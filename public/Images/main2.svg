@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2560px" height="962px" viewBox="0 0 100% 100%" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="23.4533364%" y1="100%" x2="100%" y2="25.6451991%" id="linearGradient-1">
+            <stop stop-color="#8837BC" offset="0%"></stop>
+            <stop stop-color="#514ED7" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,24.103863 C428.538038,-20.1071907 976.653392,-3.49965479 1644.34606,73.9264706 C1927.80628,106.796723 2233.02426,83.8823823 2560,5.18344961 L2559.49286,962 L0,962 L0,24.103863 Z" id="path-2"></path>
+    </defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2560">
+            <g id="HERO">
+                <g id="Bg">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="background-hero" fill="url(#linearGradient-1)" transform="translate(1280.000000, 481.000000) scale(-1, -1) translate(-1280.000000, -481.000000) " xlink:href="#path-2"></use>
+                    <path d="M1934.94667,1031 L2453,961.737171 C2040.93933,913.012369 1728.70023,886.106258 1516.28272,881.018837 C1303.8652,875.931416 1075.77096,889.89649 832,922.914058 L1934.94667,1031 Z" id="decor-2" fill="#FFFFFF" opacity="0.100000001" mask="url(#mask-3)"></path>
+                    <path d="M2198.38888,1009 L2560,980.831223 C2205.33599,912.27545 1933.67466,868.588803 1745.016,849.771283 C1556.35735,830.953764 1381.01868,830.115338 1219,847.256005 L1219,974.75348 L2198.38888,1009 Z" id="decor-3" fill="#FFFFFF" opacity="0.100000001" mask="url(#mask-3)" transform="translate(1889.500000, 922.000000) scale(-1, 1) translate(-1889.500000, -922.000000) "></path>
+                    <path d="M288.961527,999 L807,929.79698 C576.791711,884.5399 404.048926,853.568792 288.771644,836.883656 C173.494363,820.19852 77.380665,812.255568 0.430551425,813.054801 L0,995.351237 L288.961527,999 Z" id="-" fill="#FFFFFF" opacity="0.100000001" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
