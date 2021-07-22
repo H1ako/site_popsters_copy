@@ -19,7 +19,7 @@
                         <li>MAIN</li>
                         <li>FAQ</li>
                         <li>PRICING</li>
-                        <li>BLOG</li>
+                        <li><a href="{{ route('blog'); }}">BLOG</a></li>
                     </ul>
                 </nav>
                 <label for="language" class='select-arrow'>

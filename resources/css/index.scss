@@ -64,6 +64,28 @@ header{
                             left: 1rem;
                             right: 1rem;
                         }
+
+                        a{
+                            position: relative;
+                            text-decoration: none;
+                            color: inherit;
+                            &:hover:after{
+                                transform: translateX(-50%) translateY(1rem);
+                                opacity: 1;
+                            }
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                width: 120%;
+                                height: .1rem;
+                                background: white;
+                                top: 100%;
+                                left: 50%;
+                                transition: all .2s ease;
+                                opacity: 0;
+                                transform: translateX(-50%);
+                            }
+                        }
                     }
                 }
             }
@@ -100,8 +122,6 @@ header{
                 @include fontLatoBold;
                 text-align: center;
                 text-align-last: center;
-
-
 
                 &::-ms-expand {
                   display: none;
@@ -146,6 +166,11 @@ header{
                     box-shadow: 0 .8rem 3rem 0 rgb(250, 57, 53, 25%);
                     color: white;
                     padding: 2rem 5.3rem;
+                    transition: all .3s ease;
+
+                    &:hover{
+                        box-shadow: 0 .8rem 10rem 0 rgb(250, 57, 53, 100%);
+                    }
                 }
             }
             .img{
@@ -155,4 +180,6 @@ header{
         }
     }
 }
+
+
 // ===/Header===

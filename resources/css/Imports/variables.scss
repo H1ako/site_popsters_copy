@@ -1,5 +1,7 @@
 // ===Common===
-
+:root{
+    --color-b: #123;
+}
 
 @mixin fontLatoThin{
     font-family: 'Lato', sans-serif;
