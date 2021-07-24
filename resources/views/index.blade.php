@@ -45,10 +45,15 @@
             </main>
         </div>
     </header>
-    <section class="section-partners">
+    <main>
+        <section class="section-partners">
 
-    </section>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/select_tag.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
 </body>
 </html>

@@ -338,12 +338,9 @@ template {
   display: none;
 }
 
-:root {
-  --color-b: #123;
-}
-
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -368,13 +365,14 @@ header {
 }
 header .section-inner {
   position: relative;
-  min-height: 140vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 20rem;
 }
 header .section-inner .top-bar {
-  margin-top: 5rem;
   position: relative;
   width: 100%;
   display: flex;
@@ -515,4 +513,8 @@ header .section-inner main .info button:hover {
 header .section-inner main .img {
   margin-left: 6%;
   width: 45%;
+}
+
+main {
+  position: relative;
 }
