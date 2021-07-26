@@ -16,28 +16,38 @@
                 </div>
                 <nav>
                     <ul>
-                        <li>MAIN</li>
-                        <li>FAQ</li>
-                        <li>PRICING</li>
-                        <li><a href="{{ route('blog'); }}">BLOG</a></li>
+                        <li>{{ trans('message.header_nav_mainPage') }}</li>
+                        <li>{{ trans('message.header_nav_faq') }}</li>
+                        <li>{{ trans('message.header_nav_pricing') }}</li>
+                        <li><a href="{{ route('blog'); }}">{{ trans('message.header_nav_blog') }}</a></li>
                     </ul>
                 </nav>
                 <label for="language" class='select-arrow'>
-                    <select id='language' class="top-bar__lang" name="language">
-                        <option value="RU" selected>RU</option>
-                        <option value="EN">ENG</option>
-                    </select>
+                    <form id='url-home_post' action="{{ route('home_post') }}" method='post'>
+                        @csrf
+
+                        <select id='language' class="top-bar__lang" name="locale">
+                            @if (App::getLocale() == 'ru')
+                            <option id='locale-ru' value="ru" selected>RU</option>
+                            <option id='locale-en' value="en">ENG</option>
+                            @else
+                            <option id='locale-ru' value="ru">RU</option>
+                            <option id='locale-en' value="en" selected>ENG</option>
+                            @endif
+
+                        </select>
+                    </form>
                 </label>
             </div>
             <main>
                 <div class="info">
                     <div class="info__slogan">
-                        Get social activity insights to make your marketing better than ever
+                        {{ trans('message.header_about') }}
                     </div>
                     <div class="info__dscrp">
-                        Popsters helps to compare, to get stats and measure efficiency of posts of any social page that you are interested in
+                        {{ trans('message.header_about_subtitle') }}
                     </div>
-                    <button>TRY FOR FREE</button>
+                    <button>{{ trans('message.header_button') }}</button>
                 </div>
                 <div class="img">
                     <img src="/Images/arts/main.svg" alt="">
@@ -51,7 +61,7 @@
         </section>
     </main>
     <footer>
-        
+
     </footer>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
