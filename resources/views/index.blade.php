@@ -1,3 +1,4 @@
+<?php $date = Date('c'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Popsters</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/index.css?<?=$date?>">
 </head>
 <body>
     <header>
@@ -124,29 +125,122 @@
             <div class="slider" id="slider">
                 <div class="section-inner">
                     <div class="slider__slides">
-                        <img src="/Images/slider/screen1_ru.jpg" alt="" class="slider__slides__slide active">
-                        <img src="/Images/slider/screen2_ru.jpg" alt="" class="slider__slides__slide">
-                        <img src="/Images/slider/screen3_ru.jpg" alt="" class="slider__slides__slide">
-                        <img class="mask" src='/Images/slider/mask.jpg'></img>
-                        <img class="mask" src='/Images/slider/mask.jpg'></img>
-                    </div>
+                        <div class="slider__slides__slide">
+                            <img src="/Images/slider/screen1_ru.jpg" alt="">
+                        </div>
+                        <div class="slider__slides__slide">
+                            <img src="/Images/slider/screen2_ru.jpg" alt="">
+                        </div>
+                        <div class="slider__slides__slide">
+                            <img src="/Images/slider/screen3_ru.jpg" alt="">
+                        </div>
+                        <img class="mask" src='/Images/slider/mask.jpg'>
+                        <img class="mask" src='/Images/slider/mask.jpg'>
+                    </div/>
                     <div class="slider__arrows">
-                        <img src="/Images/slider/left-arrow.svg" alt="" class="slider__arrows__arrow">
-                        <img src="/Images/slider/right-arrow.svg" alt="" class="slider__arrows__arrow">
+                        <img src="/Images/slider/left-arrow.svg" alt="PREV" id='slider-left-arrow' class="slider__arrows__arrow">
+                        <img src="/Images/slider/right-arrow.svg" alt="NEXT" id='slider-right-arrow' class="slider__arrows__arrow">
                     </div>
                     <div class="slider__btns">
-                        <input type="radio" class='slide_radio' checked name="slide_radio">
+                        <input type="radio" class='slide_radio' name="slide_radio">
                         <input type="radio" class='slide_radio' name="slide_radio">
                         <input type="radio" class='slide_radio' name="slide_radio">
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section-offers">
+            <div class="wrapper">
+                <div class="wrapper__title">Pricing</div>
+                <div class="wrapper__desc">
+                    Low prices for fast and convenient tool that helps to thousands users save time and make their job easier
+                </div>
+                <a href="" class="wrapper__all_plans">SEE ALL PLANS</a>
+            </div>
+            <div class="offers">
+                <div class="offer_free">
+                    <h2>Free</h2>
+                    <ul class="offer_free__options">
+                        <li><span class="highlighted">7</span> days for test</li>
+                        <li><span class="highlighted">10</span> analyzes in trial</li>
+                        <li><span class="highlighted">15</span> posts in favorites</li>
+                    </ul>
+                </div>
+                <div class="offer_paid">
+                    <h2>$9.99</h2>
+                    <ul class="offer_paid__options">
+                        <li>For <span class="highlighted">1</span> social network</li>
+                        <li><span class="highlighted">Unlimited</span> count of analyzes of any interested pages</li>
+                        <li><span class="highlighted">Reports</span> generating</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section-video">
+            <div class="wrapper">
+                <div class="wrapper__title">Look at a short explainer video about Popsters</div>
+                <div class="wrapper__desc">
+                    Cartoon story about one of the cases of using Popsters at work.
+                </div>
+            </div>
+            <div class="youtube-player">
+                <lite-youtube videoid="V1SqQDNAGzg" style="background-image: url('/Images/etc/cover.jpg');"></lite-youtube>
+            </div>
+        </section>
+
+        <section class="section-socials">
+            <div class="social-circles">
+                <div class="social-circle tw"><img src="../Images/socials/tw.svg" alt=""></div>
+                <div class="social-circle vk"><img src="../Images/socials/vk.svg" alt=""></div>
+                <div class="social-circle ok"><img src="../Images/socials/ok.svg" alt=""></div>
+                <div class="social-circle fk"><img src="../Images/socials/fk.svg" alt=""></div>
+                <div class="social-circle pn"><img src="../Images/socials/pn.svg" alt=""></div>
+                <div class="social-circle tb"><img src="../Images/socials/tb.svg" alt=""></div>
+                <div class="social-circle gp"><img src="../Images/socials/gp.svg" alt=""></div>
+                <div class="social-circle cb"><img src="../Images/socials/cb.svg" alt=""></div>
+                <div class="social-circle tg"><img src="../Images/socials/tg.svg" alt=""></div>
+                <div class="social-circle fb"><img src="../Images/socials/fb.svg" alt=""></div>
+                <div class="social-circle ig"><img src="../Images/socials/ig.svg" alt=""></div>
+                <div class="social-circle yt"><img src="../Images/socials/yt.svg" alt=""></div>
+            </div>
+            <div class="wrapper">
+                <div class="wrapper__title">12 social networks for analyzing in one place</div>
+                <div class="wrapper__desc">
+                    Don't need to have a big count of different tools and windows for work. Log In using interested social media and analyze it all at one window in the same feed, graphs and charts
+                </div>
+                <a class="wrapper__try">TRY FOR FREE</a>
+                <div class="card">No credit card required</div>
+            </div>
+            <a class="to_top" id="btn-to_top"><span><img src="/Images/etc/small-arrow-up.svg" alt=""></span><span class="text">BACK TO TOP</span></a>
+        </section>
     </main>
     <footer>
-
+        <div class="contacts">
+            <div class="info">
+                <div class="popsters">
+                    <strong>Popsters</strong> - social media content analytics tool
+                </div>
+                <div class="email">
+                    <strong>Support@popsters.com</strong> - support and proposals
+                </div>
+            </div>
+            <div class="socials">
+                <div class="social twitter"><img src="/Images/socials-colored/tw.svg" alt=""></div>
+                <div class="social facebook"><img src="/Images/socials-colored/fb.svg" alt=""></div>
+                <div class="social vk"><img src="/Images/socials-colored/vk.svg" alt=""></div>
+                <div class="social ok"><img src="/Images/socials-colored/ok.svg" alt=""></div>
+                <div class="social telegram"><img src="/Images/socials-colored/tg.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="credentials">
+            <span>Popsters terms</span>
+            <span class='privacy'>Privacy Policy</span>
+            <span>© Popsters 2021. All rights reserved.</span>
+        </div>
     </footer>
     <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/main.js?<?=$date?>"></script>
+    <script type="text/javascript" src="/js/slider.js?<?=$date?>"></script>
+    <script type="text/javascript" src="/js/lite-youtube-embed.js?<?=$date?>"></script>
 </body>
 </html>
