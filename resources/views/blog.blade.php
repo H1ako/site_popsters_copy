@@ -1,3 +1,4 @@
+<?php $date = Date('c'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
-    <link rel="stylesheet" href="/css/blog.css">
+    <script src="https://use.fontawesome.com/8e72230c14.js"></script>
+    <link rel="stylesheet" href="/css/blog.css?<?=$date?>">
 </head>
 <body>
     <header>
@@ -33,18 +35,17 @@
             </div>
         </div>
     </header>
-    <main style='display: none;'>
+    <main>
         <div class="section-inner">
-            <div class="filters"></div>
+            <div class="filters">
+                <div class="filter" value='all'>All</div>
+                @foreach ($filters as $filter)
+                    <div class="filter" value='{{ $filter }}'>{{ $filter }}</div>
+                @endforeach
+            </div>
+            <input type="hidden" id='update_blog_post-url' value='{{ route('update_blog_post') }}'>
             <div class="blog-posts">
-                <div class="blog-post">
-                    <img src="" alt="" class="blog-post__img">
-                    <div class="blog-post__title">How to create a portrait of the target audience correctly</div>
-                    <div class="blog-post__date">1 March 2021</div>
-                    <div class="blog-post__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae maxime labore nisi, inventore libero ex accusamus, ducimus ea illo esse, perspiciatis hic cupiditate eligendi saepe? Nobis dolore beatae assumenda deleniti saepe omnis soluta pariatur in repellendus iste facere quisquam voluptates perspiciatis magni voluptas quia minus, non! Tenetur recusandae sit eum eveniet ipsa, minima itaque, ducimus non, aut voluptate corporis dolore.</div>
-                    <a href="" class="blog-post__read-more">Read more</a>
-                    <div class="blog-post__subject">Social</div>
-                </div>
+                
             </div>
         </div>
     </main>
@@ -60,6 +61,6 @@
         </div>
     </div>
     <script src="/js/jquery.min.js"></script>
-    <script src="/js/blog-main.js"></script>
+    <script src="/js/blog-main.js?<?=$date?>"></script>
 </body>
 </html>

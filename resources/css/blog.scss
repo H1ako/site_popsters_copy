@@ -1,15 +1,20 @@
 @import "Imports/normalize.scss";
 @import 'Imports/fonts.scss';
 @import "Imports/blog_variables.scss";
-*{
+*,
+*::after,
+*::before{
     box-sizing: border-box;
+}
+body{
+    background: white;
 }
 html{
     font-size: 10px;
 }
 .section-inner{
     width: 80%;
-    margin:  auto;
+    margin: 0 auto;
 }
 //===Header===
 header{
@@ -102,3 +107,180 @@ header{
     }
 }
 //===/Header===
+
+//===Main===
+main{
+    padding: 2.4rem 0 3.6rem;
+    position: relative;
+    .section-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .filters{
+            @include fontLatoBold;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .filter{
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                line-height: 1.2em;
+                letter-spacing: 0.05em;
+                &:not(:first-child){
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+        .blog-posts{
+            margin: 3rem auto;
+            justify-content: center;
+            position: relative;
+            width: 95%;
+            display: grid;
+            grid-gap: 1.8rem;
+            grid-template-rows: minmax(1fr, 60rem);
+
+            @media (max-width: 775px){
+                grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+            }
+            @media (min-width: 776px){
+                grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+            }
+            
+            .blog-post{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #eaeaea;
+                overflow: hidden;
+                border-radius: .5rem;
+                box-shadow: 0 .5rem 1.5rem rgb(0 0 0 / 5%);
+                position: relative;
+                height: 100%;
+                width: 100%;
+                &__img{
+                    width: 100%;
+                    max-width: 100%;
+                    flex-basis: 40%;
+                    object-position: 50% 50%;
+                }
+                &__info{
+                    flex-grow: 1;
+                    flex-basis: 60%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    position: relative;
+                    padding: 2.4rem;
+
+                    .title-date-desc{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        &__title{
+                            align-self: flex-start;
+                            text-decoration: none;
+                            cursor: pointer;
+                            word-wrap: break-word;
+                            text-align: left;
+                            color: #008bcb;
+                            -webkit-font-smoothing: antialiased;
+                            line-height: 1.2;
+                            font-size: 2rem;
+                            @include fontLatoBold;
+                            -webkit-box-orient: vertical;
+                            display: -webkit-box;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            -webkit-line-clamp: 2;
+    
+                            &:hover{
+                                color: #03A9F4;
+                            }
+                        }
+                        &__date{
+                            margin-top: 1rem;
+                            color: #303133;
+                            align-self: flex-end;
+                            font-size: 1.2rem;
+                            @include fontLatoBold;
+                        }
+                        &__desc{
+                            -webkit-box-orient: vertical;
+                            word-wrap: break-word;
+                            display: -webkit-box;
+                            text-align: left;
+                            margin-top: 1.8rem;
+                            color: #777;
+                            line-height: 1.6;
+                            font-size: 1.5rem;
+                            @include fontLatoRegular;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            -webkit-line-clamp: 6;
+    
+                        }
+                    }
+                    
+                    .btn-and-subject{
+                        justify-self: flex-end;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        &__read-more{
+                            position: relative;
+                            justify-self: end;
+                            @include fontLatoBold;
+                            font-size: 1.6rem;
+                            color: #303133;
+                            margin-top: 0.9rem;
+                            margin-right: 0.9rem;
+                            align-self: flex-end;
+                            text-decoration: none;
+                            cursor: pointer;
+                            text-align: right;
+    
+                            i{
+                                font-size: 1.4rem;
+                                margin-left: 1.2rem;
+                                color: #03A9F4;
+                            }
+    
+                            &:hover{
+                                color: #03A9F4;
+                            }
+                        }
+                        &__subject{
+                            position: relative;
+                            width: 100%;
+                            position: relative;
+                            text-align: left;
+                            @include fontLatoBold;
+                            align-self: flex-start;
+                            margin-top: 3.6rem;
+                            color: #303133;
+                            font-size: 1.2rem;
+                            font-style: italic;
+                            &::before{
+                                position: absolute;
+                                top: -100%;
+                                left: 0;
+                                content: '';
+                                height: 0.1rem;
+                                width: 100%;
+                                background: #eaeaea;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}
+//===/Main===

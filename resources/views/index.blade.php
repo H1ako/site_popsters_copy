@@ -26,7 +26,6 @@
                 <label for="language" class='select-arrow'>
                     <form id='url-home_post' action="{{ route('home_post') }}" method='post'>
                         @csrf
-
                         <select id='language' class="top-bar__lang" name="locale">
                             @if (App::getLocale() == 'ru')
                             <option id='locale-ru' value="ru" selected>RU</option>
@@ -35,7 +34,6 @@
                             <option id='locale-ru' value="ru">RU</option>
                             <option id='locale-en' value="en" selected>ENG</option>
                             @endif
-
                         </select>
                     </form>
                 </label>
@@ -136,7 +134,7 @@
                         </div>
                         <img class="mask" src='/Images/slider/mask.jpg'>
                         <img class="mask" src='/Images/slider/mask.jpg'>
-                    </div/>
+                    </div>
                     <div class="slider__arrows">
                         <img src="/Images/slider/left-arrow.svg" alt="PREV" id='slider-left-arrow' class="slider__arrows__arrow">
                         <img src="/Images/slider/right-arrow.svg" alt="NEXT" id='slider-right-arrow' class="slider__arrows__arrow">
