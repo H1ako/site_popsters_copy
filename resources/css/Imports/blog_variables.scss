@@ -1,0 +1,27 @@
+// ===Common===
+$color-text: #1A1A1D;
+
+@mixin fontLatoThin{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+@mixin fontLatoRegular{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+@mixin fontLatoBold{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+// ==Adaptive Sizes==
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+$screen-sx-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+// ==/Adaptive Sizes==
+//===/Common===
