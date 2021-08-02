@@ -38,14 +38,18 @@
     <main>
         <div class="section-inner">
             <div class="filters">
-                <div class="filter" value='all'>All</div>
+                <div class="filter current" value='all'>all</div>
                 @foreach ($filters as $filter)
-                    <div class="filter" value='{{ $filter }}'>{{ $filter }}</div>
+                    <div class="filter">{{ $filter }}</div>
                 @endforeach
             </div>
             <input type="hidden" id='update_blog_post-url' value='{{ route('update_blog_post') }}'>
             <div class="blog-posts">
                 
+            </div>
+            <input type="hidden" id='update_blog_posts_pages-url' value='{{ route('update_blog_post_pages') }}'>
+            <div class="pages">
+
             </div>
         </div>
     </main>

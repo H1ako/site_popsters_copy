@@ -479,6 +479,9 @@ main .section-inner .filters .filter {
 main .section-inner .filters .filter:not(:first-child) {
   margin-left: 1.5rem;
 }
+main .section-inner .filters .filter.current {
+  font-size: 1.4rem;
+}
 main .section-inner .blog-posts {
   margin: 3rem auto;
   justify-content: center;
@@ -624,4 +627,29 @@ main .section-inner .blog-posts .blog-post__info .btn-and-subject__subject::befo
   width: 100%;
   background: #eaeaea;
   margin: 0 auto;
+}
+main .section-inner .pages {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+main .section-inner .pages .page {
+  cursor: pointer;
+  line-height: 3.6rem;
+  min-width: 3.6rem;
+  min-height: 3.6rem;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+main .section-inner .pages .page.active {
+  background: #eee;
+  cursor: default;
 }
