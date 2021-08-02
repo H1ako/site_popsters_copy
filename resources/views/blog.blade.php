@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/blog.css?<?=$date?>">
 </head>
 <body>
+    <noscript>Enable scripts to see this page correctly</noscript>
     <header>
         <div class="topbar">
             <div class="section-inner">
