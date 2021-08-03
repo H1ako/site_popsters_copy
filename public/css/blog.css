@@ -653,3 +653,76 @@ main .section-inner .pages .page.active {
   background: #eee;
   cursor: default;
 }
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #2d2d31;
+  display: flex;
+  flex-direction: column;
+}
+footer .contacts {
+  margin: 0 auto;
+  margin-top: 4.8rem;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .contacts .info {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #8E8E97;
+  letter-spacing: 0.089rem;
+  line-height: 3.4rem;
+  font-size: 1.6rem;
+}
+footer .contacts .info strong {
+  color: #ff3765;
+}
+footer .contacts .socials {
+  display: flex;
+}
+footer .contacts .socials .social {
+  position: relative;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: #4b4b4b;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin-right: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .contacts .socials .social img {
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+footer .credentials {
+  margin-top: 1.8rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #8E8E97;
+  letter-spacing: 0.089rem;
+  line-height: 3.4rem;
+  font-size: 1.6rem;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+footer .credentials .privacy {
+  margin-left: 2rem;
+}
+footer .credentials span {
+  text-align: center;
+}

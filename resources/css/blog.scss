@@ -312,3 +312,71 @@ main{
     }
 }
 //===/Main===
+
+//===Footer===
+footer{
+    position: relative;
+    width: 100%;
+    background: $color-footer-bg;
+    display: flex;
+    flex-direction: column;
+
+    .contacts{
+        margin: 0 auto;
+        margin-top: 4.8rem;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        .info{
+            @include fontLatoRegular;
+            color: #8E8E97;
+            letter-spacing: 0.089rem;
+            line-height: 3.4rem;
+            font-size: 1.6rem;
+            strong{color: #ff3765;}
+        }
+        .socials{
+            display: flex;
+            .social{
+                position: relative;
+                width: 3.2rem;
+                height: 3.2rem;
+                background: #4b4b4b;
+                border-radius: .4rem;
+                cursor: pointer;
+                margin-right: .6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    background-repeat: no-repeat;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    position: relative;
+                    background-size: contain;
+                    background-position: center;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+    .credentials{
+        margin-top: 1.8rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include fontLatoRegular;
+        color: #8E8E97;
+        letter-spacing: 0.089rem;
+        line-height: 3.4rem;
+        font-size: 1.6rem;
+        max-width: 35rem;
+        margin: 0 auto;
+        .privacy{margin-left: 2rem;}
+        span{text-align: center;}
+    }
+}
+//===/Footer===

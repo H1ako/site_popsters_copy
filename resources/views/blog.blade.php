@@ -54,17 +54,30 @@
             </div>
         </div>
     </main>
-    <footer></footer>
-    <div class="fixed-about" style='display: none;'>
-        <div class="section-inner">
-            <span class="popsters">Popsters - сервис аналитики сообществ социальных сетей</span>
-            <a href="" class="">Learn more</a>
+    <footer>
+        <div class="contacts">
+            <div class="info">
+                <div class="popsters">
+                    <strong>Popsters</strong> - social media content analytics tool
+                </div>
+                <div class="email">
+                    <strong>Support@popsters.com</strong> - support and proposals
+                </div>
+            </div>
             <div class="socials">
-                <div class="social vk"><img src="" alt=""></div>
-                <div class="social fb"><img src="" alt=""></div>
+                <div class="social twitter"><img src="/Images/socials-colored/tw.svg" alt=""></div>
+                <div class="social facebook"><img src="/Images/socials-colored/fb.svg" alt=""></div>
+                <div class="social vk"><img src="/Images/socials-colored/vk.svg" alt=""></div>
+                <div class="social ok"><img src="/Images/socials-colored/ok.svg" alt=""></div>
+                <div class="social telegram"><img src="/Images/socials-colored/tg.svg" alt=""></div>
             </div>
         </div>
-    </div>
+        <div class="credentials">
+            <span>Popsters terms</span>
+            <span class='privacy'>Privacy Policy</span>
+            <span>© Popsters 2021. All rights reserved.</span>
+        </div>
+    </footer>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/blog-main.js?<?=$date?>"></script>
 </body>

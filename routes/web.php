@@ -14,16 +14,6 @@ Route::post('/', [ HomeLang::class, 'changeLang' ])->name('home_post');
 //==================== Blog ====================//
 Route::get('/blog', function (){
     Session::put('posts_amount', 12);
-    // for ($i=3; $i <= 100; $i++){
-    //     $el = new blog();
-    //     $el->title = $i;
-    //     $el->description = $i;
-    //     $el->date = '2021-08-03';
-    //     if ($i <= 30) $el->subject = 'Number';
-    //     else if ($i > 30 && $i <= 70) $el->subject = 'Number2';
-    //     else $el->subject = 'Number3';
-    //     $el->save();
-    // }
     $filters = array_unique(blog::pluck('subject')->all());
     $data = [
         'filters' => $filters,
